@@ -1,0 +1,1976 @@
+[
+ {
+  "id": "eval-01",
+  "text": "3 x Green Acre Plain Yogurt (32 oz) @ $9.57\n3 x Northfarm Whole Milk (3.79 L) @ $12.87\n3 x Lakeview Chicken Breast (1 lb) @ $11.97\n1 x Fresh Pick Carrots (2 lb) @ $1.99\n3 x Green Acre Baby Spinach (5 oz) @ $7.47\n2 x Green Acre Frozen Peas (12 oz) @ $3.58\n1 x Northfarm Butter (8 oz) @ $3.79\n1 x Fancy Farms Greek Yogurt (32 oz) @ $5.49",
+  "expected": [
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 3,
+    "price": 9.57,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 3,
+    "price": 12.87,
+    "size_text": "3.79 L"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 1,
+    "price": 1.99,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 3,
+    "price": 7.47,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 1,
+    "price": 3.79,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 1,
+    "price": 5.49,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-02",
+  "text": "3 x Fresh Pick Gala Apples (3 lb) @ $11.97\n1 x Green Acre Baby Spinach (5 oz) @ $2.49\n3 x Northfarm Peanut Butter (16 oz) @ $8.97",
+  "expected": [
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Northfarm Peanut Butter",
+    "quantity": 3,
+    "price": 8.97,
+    "size_text": "16 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-03",
+  "text": "1 x Lakeview Crushed Tomatoes (28 oz) @ $1.79\n2 x Plain & Simple All-Purpose Flour (5 lb) @ $8.58\n3 x Lakeview Olive Oil (500 ml) @ $23.97\n2 x Plain & Simple Long Grain Rice (2 lb) @ $4.58",
+  "expected": [
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Plain & Simple All-Purpose Flour",
+    "quantity": 2,
+    "price": 8.58,
+    "size_text": "5 lb"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 3,
+    "price": 23.97,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 2,
+    "price": 4.58,
+    "size_text": "2 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-04",
+  "text": "3 x Lakeview Ground Beef (1 lb) @ $14.97\n2 x Green Acre Frozen Peas (12 oz) @ $3.58\n2 x Fresh Pick Bananas (1 lb) @ $1.38",
+  "expected": [
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 2,
+    "price": 1.38,
+    "size_text": "1 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-05",
+  "text": "1 x Northfarm Butter (8 oz) @ $3.79\n2 x Fresh Pick Gala Apples (3 lb) @ $7.98\n1 x Lakeview Ground Beef (1 lb) @ $4.99\n2 x Harvest Gold Whole Wheat Bread (20 oz) @ $6.58\n2 x Green Acre Plain Yogurt (32 oz) @ $6.38",
+  "expected": [
+   {
+    "description": "Northfarm Butter",
+    "quantity": 1,
+    "price": 3.79,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 2,
+    "price": 7.98,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 2,
+    "price": 6.58,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 2,
+    "price": 6.38,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-06",
+  "text": "2 x Fresh Pick Carrots (2 lb) @ $3.98\n1 x Green Acre Frozen Peas (12 oz) @ $1.79\n3 x Harvest Gold Large Eggs (12 ct) @ $10.47\n2 x Lakeview Chicken Breast (1 lb) @ $7.98\n3 x Plain & Simple Spaghetti (16 oz) @ $4.47\n3 x Lakeview Olive Oil (500 ml) @ $23.97\n2 x Green Acre Plain Yogurt (32 oz) @ $6.38",
+  "expected": [
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 2,
+    "price": 3.98,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 3,
+    "price": 10.47,
+    "size_text": "12 ct"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 2,
+    "price": 7.98,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 3,
+    "price": 23.97,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 2,
+    "price": 6.38,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-07",
+  "text": "1 x Fresh Pick Gala Apples (3 lb) @ $3.99\n1 x Lakeview Crushed Tomatoes (28 oz) @ $1.79\n1 x Lakeview Cheddar Cheese (8 oz) @ $2.99\n2 x Harvest Gold Large Eggs (12 ct) @ $6.98\n2 x Plain & Simple Black Beans (15 oz) @ $2.38\n2 x Green Acre Baby Spinach (5 oz) @ $4.98\n3 x Fresh Pick Roma Tomatoes (1 lb) @ $4.47",
+  "expected": [
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 1,
+    "price": 2.99,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 2,
+    "price": 6.98,
+    "size_text": "12 ct"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 2,
+    "price": 2.38,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 2,
+    "price": 4.98,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Fresh Pick Roma Tomatoes",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "1 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-08",
+  "text": "3 x Fresh Pick Bananas (1 lb) @ $2.07\n3 x Harvest Gold Plain Bagels (6 ct) @ $8.37\n3 x Fresh Pick Gala Apples (3 lb) @ $11.97\n1 x Plain & Simple Black Beans (15 oz) @ $1.19\n3 x Fresh Pick Carrots (2 lb) @ $5.97",
+  "expected": [
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 3,
+    "price": 2.07,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 3,
+    "price": 8.37,
+    "size_text": "6 ct"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 1,
+    "price": 1.19,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 3,
+    "price": 5.97,
+    "size_text": "2 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-09",
+  "text": "3 x Fresh Pick Bananas (1 lb) @ $2.07\n3 x Lakeview Olive Oil (500 ml) @ $23.97\n3 x Lakeview Chicken Breast (1 lb) @ $11.97\n1 x Green Acre Baby Spinach (5 oz) @ $2.49\n3 x Fancy Farms Greek Yogurt (32 oz) @ $16.47\n2 x Plain & Simple Spaghetti (16 oz) @ $2.98\n1 x Plain & Simple Flour Tortillas (10 ct) @ $2.49\n1 x Fresh Pick Carrots (2 lb) @ $1.99",
+  "expected": [
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 3,
+    "price": 2.07,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 3,
+    "price": 23.97,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 3,
+    "price": 16.47,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 2,
+    "price": 2.98,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Plain & Simple Flour Tortillas",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "10 ct"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 1,
+    "price": 1.99,
+    "size_text": "2 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-10",
+  "text": "2 x Green Acre Frozen Peas (12 oz) @ $3.58\n1 x Harvest Gold Whole Wheat Bread (20 oz) @ $3.29\n1 x Plain & Simple Flour Tortillas (10 ct) @ $2.49",
+  "expected": [
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 1,
+    "price": 3.29,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Plain & Simple Flour Tortillas",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "10 ct"
+   }
+  ]
+ },
+ {
+  "id": "eval-11",
+  "text": "3 x Northfarm Orange Juice (52 floz) @ $13.47\n2 x Lakeview Crushed Tomatoes (28 oz) @ $3.58\n1 x Harvest Gold Whole Wheat Bread (20 oz) @ $3.29\n2 x Fresh Pick Gala Apples (3 lb) @ $7.98\n1 x Plain & Simple All-Purpose Flour (5 lb) @ $4.29\n1 x Harvest Gold Rolled Oats (42 oz) @ $4.99\n3 x Plain & Simple Flour Tortillas (10 ct) @ $7.47",
+  "expected": [
+   {
+    "description": "Northfarm Orange Juice",
+    "quantity": 3,
+    "price": 13.47,
+    "size_text": "52 floz"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 1,
+    "price": 3.29,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 2,
+    "price": 7.98,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Plain & Simple All-Purpose Flour",
+    "quantity": 1,
+    "price": 4.29,
+    "size_text": "5 lb"
+   },
+   {
+    "description": "Harvest Gold Rolled Oats",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "42 oz"
+   },
+   {
+    "description": "Plain & Simple Flour Tortillas",
+    "quantity": 3,
+    "price": 7.47,
+    "size_text": "10 ct"
+   }
+  ]
+ },
+ {
+  "id": "eval-12",
+  "text": "2 x Lakeview Olive Oil (500 ml) @ $15.98\n1 x Fresh Pick Carrots (2 lb) @ $1.99\n1 x Lakeview Chicken Breast (1 lb) @ $3.99\n3 x Harvest Gold Ground Coffee (12 oz) @ $26.97\n2 x Plain & Simple Long Grain Rice (2 lb) @ $4.58\n1 x Oven Joy Frozen Pizza (14 oz) @ $5.49\n1 x Plain & Simple Flour Tortillas (10 ct) @ $2.49",
+  "expected": [
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 2,
+    "price": 15.98,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 1,
+    "price": 1.99,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Harvest Gold Ground Coffee",
+    "quantity": 3,
+    "price": 26.97,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 2,
+    "price": 4.58,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Oven Joy Frozen Pizza",
+    "quantity": 1,
+    "price": 5.49,
+    "size_text": "14 oz"
+   },
+   {
+    "description": "Plain & Simple Flour Tortillas",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "10 ct"
+   }
+  ]
+ },
+ {
+  "id": "eval-13",
+  "text": "3 x Northfarm Butter (8 oz) @ $11.37\n2 x Plain & Simple All-Purpose Flour (5 lb) @ $8.58\n3 x Fresh Pick Bananas (1 lb) @ $2.07",
+  "expected": [
+   {
+    "description": "Northfarm Butter",
+    "quantity": 3,
+    "price": 11.37,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Plain & Simple All-Purpose Flour",
+    "quantity": 2,
+    "price": 8.58,
+    "size_text": "5 lb"
+   },
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 3,
+    "price": 2.07,
+    "size_text": "1 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-14",
+  "text": "3 x Plain & Simple Flour Tortillas (10 ct) @ $7.47\n2 x Plain & Simple Granulated Sugar (4 lb) @ $6.98\n3 x Plain & Simple Spaghetti (16 oz) @ $4.47",
+  "expected": [
+   {
+    "description": "Plain & Simple Flour Tortillas",
+    "quantity": 3,
+    "price": 7.47,
+    "size_text": "10 ct"
+   },
+   {
+    "description": "Plain & Simple Granulated Sugar",
+    "quantity": 2,
+    "price": 6.98,
+    "size_text": "4 lb"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "16 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-15",
+  "text": "3 x Plain & Simple Black Beans (15 oz) @ $3.57\n3 x Lakeview Chicken Breast (1 lb) @ $11.97\n2 x Green Acre Plain Yogurt (32 oz) @ $6.38",
+  "expected": [
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 3,
+    "price": 3.57,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 2,
+    "price": 6.38,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-16",
+  "text": "3 x Harvest Gold Whole Wheat Bread (20 oz) @ $9.87\n1 x Green Acre Plain Yogurt (32 oz) @ $3.19\n3 x Fresh Pick Roma Tomatoes (1 lb) @ $4.47\n1 x Plain & Simple Long Grain Rice (2 lb) @ $2.29\n3 x Fresh Pick Bananas (1 lb) @ $2.07\n2 x Plain & Simple Spaghetti (16 oz) @ $2.98\n3 x Northfarm Whole Milk (3.79 L) @ $12.87\n3 x Fresh Pick Carrots (2 lb) @ $5.97",
+  "expected": [
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 3,
+    "price": 9.87,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 1,
+    "price": 3.19,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Fresh Pick Roma Tomatoes",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 1,
+    "price": 2.29,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 3,
+    "price": 2.07,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 2,
+    "price": 2.98,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 3,
+    "price": 12.87,
+    "size_text": "3.79 L"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 3,
+    "price": 5.97,
+    "size_text": "2 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-17",
+  "text": "1 x Fresh Pick Gala Apples (3 lb) @ $3.99\n3 x Northfarm Butter (8 oz) @ $11.37\n2 x Harvest Gold Plain Bagels (6 ct) @ $5.58\n2 x Lakeview Ground Beef (1 lb) @ $9.98\n1 x Fresh Pick Bananas (1 lb) @ $0.69\n1 x Lakeview Olive Oil (500 ml) @ $7.99\n2 x Northfarm Peanut Butter (16 oz) @ $5.98",
+  "expected": [
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 3,
+    "price": 11.37,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 2,
+    "price": 5.58,
+    "size_text": "6 ct"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 2,
+    "price": 9.98,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 1,
+    "price": 0.69,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 1,
+    "price": 7.99,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Northfarm Peanut Butter",
+    "quantity": 2,
+    "price": 5.98,
+    "size_text": "16 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-18",
+  "text": "1 x Green Acre Baby Spinach (5 oz) @ $2.49\n3 x Harvest Gold Large Eggs (12 ct) @ $10.47\n2 x Northfarm Orange Juice (52 floz) @ $8.98\n1 x Harvest Gold Ground Coffee (12 oz) @ $8.99\n3 x Lakeview Cheddar Cheese (8 oz) @ $8.97",
+  "expected": [
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 3,
+    "price": 10.47,
+    "size_text": "12 ct"
+   },
+   {
+    "description": "Northfarm Orange Juice",
+    "quantity": 2,
+    "price": 8.98,
+    "size_text": "52 floz"
+   },
+   {
+    "description": "Harvest Gold Ground Coffee",
+    "quantity": 1,
+    "price": 8.99,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 3,
+    "price": 8.97,
+    "size_text": "8 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-19",
+  "text": "1 x Northfarm Butter (8 oz) @ $3.79\n2 x Plain & Simple Black Beans (15 oz) @ $2.38\n3 x Harvest Gold Rolled Oats (42 oz) @ $14.97\n3 x Lakeview Olive Oil (500 ml) @ $23.97",
+  "expected": [
+   {
+    "description": "Northfarm Butter",
+    "quantity": 1,
+    "price": 3.79,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 2,
+    "price": 2.38,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Harvest Gold Rolled Oats",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "42 oz"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 3,
+    "price": 23.97,
+    "size_text": "500 ml"
+   }
+  ]
+ },
+ {
+  "id": "eval-20",
+  "text": "3 x Fresh Pick Gala Apples (3 lb) @ $11.97\n2 x Lakeview Olive Oil (500 ml) @ $15.98\n2 x Lakeview Ground Beef (1 lb) @ $9.98\n3 x Lakeview Chicken Breast (1 lb) @ $11.97\n3 x Lakeview Crushed Tomatoes (28 oz) @ $5.37\n2 x Fancy Farms Greek Yogurt (32 oz) @ $10.98",
+  "expected": [
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 2,
+    "price": 15.98,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 2,
+    "price": 9.98,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 3,
+    "price": 5.37,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-21",
+  "text": "1 x Northfarm Orange Juice (52 floz) @ $4.49\n2 x Northfarm Peanut Butter (16 oz) @ $5.98\n1 x Plain & Simple Spaghetti (16 oz) @ $1.49\n3 x Green Acre Plain Yogurt (32 oz) @ $9.57\n3 x Green Acre Baby Spinach (5 oz) @ $7.47\n1 x Green Acre Frozen Peas (12 oz) @ $1.79",
+  "expected": [
+   {
+    "description": "Northfarm Orange Juice",
+    "quantity": 1,
+    "price": 4.49,
+    "size_text": "52 floz"
+   },
+   {
+    "description": "Northfarm Peanut Butter",
+    "quantity": 2,
+    "price": 5.98,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 1,
+    "price": 1.49,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 3,
+    "price": 9.57,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 3,
+    "price": 7.47,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "12 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-22",
+  "text": "1 x Green Acre Baby Spinach (5 oz) @ $2.49\n1 x Northfarm Whole Milk (3.79 L) @ $4.29\n2 x Lakeview Cheddar Cheese (8 oz) @ $5.98\n1 x Lakeview Crushed Tomatoes (28 oz) @ $1.79\n3 x Plain & Simple All-Purpose Flour (5 lb) @ $12.87\n1 x Harvest Gold Large Eggs (12 ct) @ $3.49\n2 x Fancy Farms Greek Yogurt (32 oz) @ $10.98",
+  "expected": [
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 1,
+    "price": 4.29,
+    "size_text": "3.79 L"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 2,
+    "price": 5.98,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Plain & Simple All-Purpose Flour",
+    "quantity": 3,
+    "price": 12.87,
+    "size_text": "5 lb"
+   },
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 1,
+    "price": 3.49,
+    "size_text": "12 ct"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-23",
+  "text": "1 x Harvest Gold Rolled Oats (42 oz) @ $4.99\n2 x Fresh Pick Gala Apples (3 lb) @ $7.98\n2 x Lakeview Olive Oil (500 ml) @ $15.98\n1 x Northfarm Butter (8 oz) @ $3.79\n1 x Lakeview Chicken Breast (1 lb) @ $3.99\n1 x Harvest Gold Ground Coffee (12 oz) @ $8.99\n3 x Lakeview Ground Beef (1 lb) @ $14.97\n2 x Fancy Farms Greek Yogurt (32 oz) @ $10.98",
+  "expected": [
+   {
+    "description": "Harvest Gold Rolled Oats",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "42 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 2,
+    "price": 7.98,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 2,
+    "price": 15.98,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 1,
+    "price": 3.79,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Harvest Gold Ground Coffee",
+    "quantity": 1,
+    "price": 8.99,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-24",
+  "text": "3 x Plain & Simple Long Grain Rice (2 lb) @ $6.87\n3 x Plain & Simple Spaghetti (16 oz) @ $4.47\n3 x Lakeview Ice Cream (1.42 L) @ $14.97\n1 x Lakeview Chicken Breast (1 lb) @ $3.99\n1 x Harvest Gold Large Eggs (12 ct) @ $3.49",
+  "expected": [
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 3,
+    "price": 6.87,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Lakeview Ice Cream",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1.42 L"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 1,
+    "price": 3.49,
+    "size_text": "12 ct"
+   }
+  ]
+ },
+ {
+  "id": "eval-25",
+  "text": "1 x Lakeview Chicken Breast (1 lb) @ $3.99\n3 x Harvest Gold Whole Wheat Bread (20 oz) @ $9.87\n2 x Green Acre Frozen Peas (12 oz) @ $3.58\n1 x Green Acre Plain Yogurt (32 oz) @ $3.19\n2 x Green Acre Baby Spinach (5 oz) @ $4.98\n1 x Fresh Pick Gala Apples (3 lb) @ $3.99",
+  "expected": [
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 3,
+    "price": 9.87,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 1,
+    "price": 3.19,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 2,
+    "price": 4.98,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "3 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-26",
+  "text": "2 x Plain & Simple Spaghetti (16 oz) @ $2.98\n3 x Green Acre Baby Spinach (5 oz) @ $7.47\n1 x Lakeview Ice Cream (1.42 L) @ $4.99\n1 x Fancy Farms Greek Yogurt (32 oz) @ $5.49\n3 x Lakeview Cheddar Cheese (8 oz) @ $8.97",
+  "expected": [
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 2,
+    "price": 2.98,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 3,
+    "price": 7.47,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Lakeview Ice Cream",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "1.42 L"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 1,
+    "price": 5.49,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 3,
+    "price": 8.97,
+    "size_text": "8 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-27",
+  "text": "2 x Oven Joy Frozen Pizza (14 oz) @ $10.98\n2 x Northfarm Whole Milk (3.79 L) @ $8.58\n1 x Lakeview Cheddar Cheese (8 oz) @ $2.99\n2 x Lakeview Ground Beef (1 lb) @ $9.98\n1 x Green Acre Baby Spinach (5 oz) @ $2.49\n1 x Fresh Pick Bananas (1 lb) @ $0.69\n2 x Plain & Simple Long Grain Rice (2 lb) @ $4.58",
+  "expected": [
+   {
+    "description": "Oven Joy Frozen Pizza",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "14 oz"
+   },
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 2,
+    "price": 8.58,
+    "size_text": "3.79 L"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 1,
+    "price": 2.99,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 2,
+    "price": 9.98,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 1,
+    "price": 0.69,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 2,
+    "price": 4.58,
+    "size_text": "2 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-28",
+  "text": "2 x Plain & Simple Flour Tortillas (10 ct) @ $4.98\n2 x Fresh Pick Carrots (2 lb) @ $3.98\n2 x Fancy Farms Greek Yogurt (32 oz) @ $10.98",
+  "expected": [
+   {
+    "description": "Plain & Simple Flour Tortillas",
+    "quantity": 2,
+    "price": 4.98,
+    "size_text": "10 ct"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 2,
+    "price": 3.98,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-29",
+  "text": "2 x Lakeview Chicken Breast (1 lb) @ $7.98\n1 x Green Acre Frozen Peas (12 oz) @ $1.79\n1 x Lakeview Olive Oil (500 ml) @ $7.99\n3 x Plain & Simple Black Beans (15 oz) @ $3.57\n3 x Lakeview Crushed Tomatoes (28 oz) @ $5.37\n3 x Harvest Gold Rolled Oats (42 oz) @ $14.97\n1 x Northfarm Butter (8 oz) @ $3.79\n3 x Fresh Pick Gala Apples (3 lb) @ $11.97",
+  "expected": [
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 2,
+    "price": 7.98,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 1,
+    "price": 7.99,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 3,
+    "price": 3.57,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 3,
+    "price": 5.37,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Harvest Gold Rolled Oats",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "42 oz"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 1,
+    "price": 3.79,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "3 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-30",
+  "text": "3 x Harvest Gold Large Eggs (12 ct) @ $10.47\n1 x Harvest Gold Ground Coffee (12 oz) @ $8.99\n1 x Harvest Gold Rolled Oats (42 oz) @ $4.99\n3 x Northfarm Peanut Butter (16 oz) @ $8.97\n1 x Fancy Farms Greek Yogurt (32 oz) @ $5.49",
+  "expected": [
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 3,
+    "price": 10.47,
+    "size_text": "12 ct"
+   },
+   {
+    "description": "Harvest Gold Ground Coffee",
+    "quantity": 1,
+    "price": 8.99,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Harvest Gold Rolled Oats",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "42 oz"
+   },
+   {
+    "description": "Northfarm Peanut Butter",
+    "quantity": 3,
+    "price": 8.97,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 1,
+    "price": 5.49,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-31",
+  "text": "1 x Lakeview Cheddar Cheese (8 oz) @ $2.99\n2 x Plain & Simple Granulated Sugar (4 lb) @ $6.98\n1 x Plain & Simple Black Beans (15 oz) @ $1.19\n3 x Lakeview Ice Cream (1.42 L) @ $14.97",
+  "expected": [
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 1,
+    "price": 2.99,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Plain & Simple Granulated Sugar",
+    "quantity": 2,
+    "price": 6.98,
+    "size_text": "4 lb"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 1,
+    "price": 1.19,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Lakeview Ice Cream",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1.42 L"
+   }
+  ]
+ },
+ {
+  "id": "eval-32",
+  "text": "2 x Harvest Gold Ground Coffee (12 oz) @ $17.98\n3 x Plain & Simple Granulated Sugar (4 lb) @ $10.47\n3 x Harvest Gold Large Eggs (12 ct) @ $10.47\n3 x Lakeview Cheddar Cheese (8 oz) @ $8.97",
+  "expected": [
+   {
+    "description": "Harvest Gold Ground Coffee",
+    "quantity": 2,
+    "price": 17.98,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Plain & Simple Granulated Sugar",
+    "quantity": 3,
+    "price": 10.47,
+    "size_text": "4 lb"
+   },
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 3,
+    "price": 10.47,
+    "size_text": "12 ct"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 3,
+    "price": 8.97,
+    "size_text": "8 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-33",
+  "text": "2 x Harvest Gold Whole Wheat Bread (20 oz) @ $6.58\n2 x Fresh Pick Carrots (2 lb) @ $3.98\n1 x Fresh Pick Gala Apples (3 lb) @ $3.99\n3 x Plain & Simple Black Beans (15 oz) @ $3.57\n3 x Lakeview Crushed Tomatoes (28 oz) @ $5.37\n2 x Fancy Farms Greek Yogurt (32 oz) @ $10.98\n2 x Green Acre Baby Spinach (5 oz) @ $4.98",
+  "expected": [
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 2,
+    "price": 6.58,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 2,
+    "price": 3.98,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 3,
+    "price": 3.57,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 3,
+    "price": 5.37,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 2,
+    "price": 4.98,
+    "size_text": "5 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-34",
+  "text": "3 x Fancy Farms Greek Yogurt (32 oz) @ $16.47\n3 x Lakeview Ground Beef (1 lb) @ $14.97\n1 x Lakeview Cheddar Cheese (8 oz) @ $2.99\n1 x Northfarm Whole Milk (3.79 L) @ $4.29\n3 x Plain & Simple Spaghetti (16 oz) @ $4.47",
+  "expected": [
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 3,
+    "price": 16.47,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 1,
+    "price": 2.99,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 1,
+    "price": 4.29,
+    "size_text": "3.79 L"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "16 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-35",
+  "text": "2 x Northfarm Peanut Butter (16 oz) @ $5.98\n1 x Fresh Pick Carrots (2 lb) @ $1.99\n1 x Northfarm Butter (8 oz) @ $3.79\n2 x Fancy Farms Greek Yogurt (32 oz) @ $10.98",
+  "expected": [
+   {
+    "description": "Northfarm Peanut Butter",
+    "quantity": 2,
+    "price": 5.98,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 1,
+    "price": 1.99,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 1,
+    "price": 3.79,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "32 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-36",
+  "text": "2 x Fresh Pick Bananas (1 lb) @ $1.38\n3 x Plain & Simple Spaghetti (16 oz) @ $4.47\n3 x Oven Joy Frozen Pizza (14 oz) @ $16.47\n3 x Lakeview Olive Oil (500 ml) @ $23.97\n1 x Lakeview Crushed Tomatoes (28 oz) @ $1.79",
+  "expected": [
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 2,
+    "price": 1.38,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Oven Joy Frozen Pizza",
+    "quantity": 3,
+    "price": 16.47,
+    "size_text": "14 oz"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 3,
+    "price": 23.97,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "28 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-37",
+  "text": "1 x Oven Joy Frozen Pizza (14 oz) @ $5.49\n3 x Lakeview Olive Oil (500 ml) @ $23.97\n3 x Fresh Pick Roma Tomatoes (1 lb) @ $4.47\n1 x Plain & Simple Black Beans (15 oz) @ $1.19\n2 x Green Acre Plain Yogurt (32 oz) @ $6.38\n2 x Northfarm Butter (8 oz) @ $7.58\n3 x Fresh Pick Carrots (2 lb) @ $5.97\n1 x Green Acre Frozen Peas (12 oz) @ $1.79",
+  "expected": [
+   {
+    "description": "Oven Joy Frozen Pizza",
+    "quantity": 1,
+    "price": 5.49,
+    "size_text": "14 oz"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 3,
+    "price": 23.97,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Fresh Pick Roma Tomatoes",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 1,
+    "price": 1.19,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 2,
+    "price": 6.38,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 2,
+    "price": 7.58,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 3,
+    "price": 5.97,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "12 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-38",
+  "text": "1 x Harvest Gold Whole Wheat Bread (20 oz) @ $3.29\n1 x Fresh Pick Gala Apples (3 lb) @ $3.99\n3 x Plain & Simple Black Beans (15 oz) @ $3.57\n2 x Plain & Simple All-Purpose Flour (5 lb) @ $8.58\n2 x Fresh Pick Carrots (2 lb) @ $3.98\n1 x Northfarm Peanut Butter (16 oz) @ $2.99\n1 x Harvest Gold Rolled Oats (42 oz) @ $4.99\n2 x Green Acre Frozen Peas (12 oz) @ $3.58",
+  "expected": [
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 1,
+    "price": 3.29,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 3,
+    "price": 3.57,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Plain & Simple All-Purpose Flour",
+    "quantity": 2,
+    "price": 8.58,
+    "size_text": "5 lb"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 2,
+    "price": 3.98,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Northfarm Peanut Butter",
+    "quantity": 1,
+    "price": 2.99,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Harvest Gold Rolled Oats",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "42 oz"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "12 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-39",
+  "text": "2 x Plain & Simple All-Purpose Flour (5 lb) @ $8.58\n3 x Fresh Pick Carrots (2 lb) @ $5.97\n3 x Fresh Pick Bananas (1 lb) @ $2.07\n2 x Lakeview Chicken Breast (1 lb) @ $7.98",
+  "expected": [
+   {
+    "description": "Plain & Simple All-Purpose Flour",
+    "quantity": 2,
+    "price": 8.58,
+    "size_text": "5 lb"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 3,
+    "price": 5.97,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 3,
+    "price": 2.07,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 2,
+    "price": 7.98,
+    "size_text": "1 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-40",
+  "text": "2 x Northfarm Whole Milk (3.79 L) @ $8.58\n3 x Green Acre Plain Yogurt (32 oz) @ $9.57\n3 x Lakeview Cheddar Cheese (8 oz) @ $8.97\n1 x Lakeview Crushed Tomatoes (28 oz) @ $1.79\n2 x Northfarm Butter (8 oz) @ $7.58\n1 x Lakeview Olive Oil (500 ml) @ $7.99\n1 x Harvest Gold Large Eggs (12 ct) @ $3.49",
+  "expected": [
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 2,
+    "price": 8.58,
+    "size_text": "3.79 L"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 3,
+    "price": 9.57,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 3,
+    "price": 8.97,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 1,
+    "price": 1.79,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 2,
+    "price": 7.58,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 1,
+    "price": 7.99,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Harvest Gold Large Eggs",
+    "quantity": 1,
+    "price": 3.49,
+    "size_text": "12 ct"
+   }
+  ]
+ },
+ {
+  "id": "eval-41",
+  "text": "1 x Harvest Gold Plain Bagels (6 ct) @ $2.79\n2 x Northfarm Orange Juice (52 floz) @ $8.98\n1 x Fancy Farms Greek Yogurt (32 oz) @ $5.49\n3 x Green Acre Frozen Peas (12 oz) @ $5.37\n1 x Lakeview Ice Cream (1.42 L) @ $4.99",
+  "expected": [
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 1,
+    "price": 2.79,
+    "size_text": "6 ct"
+   },
+   {
+    "description": "Northfarm Orange Juice",
+    "quantity": 2,
+    "price": 8.98,
+    "size_text": "52 floz"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 1,
+    "price": 5.49,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 3,
+    "price": 5.37,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Lakeview Ice Cream",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "1.42 L"
+   }
+  ]
+ },
+ {
+  "id": "eval-42",
+  "text": "1 x Green Acre Plain Yogurt (32 oz) @ $3.19\n1 x Harvest Gold Plain Bagels (6 ct) @ $2.79\n1 x Lakeview Ground Beef (1 lb) @ $4.99\n2 x Lakeview Olive Oil (500 ml) @ $15.98\n1 x Plain & Simple Long Grain Rice (2 lb) @ $2.29\n1 x Plain & Simple Granulated Sugar (4 lb) @ $3.49\n3 x Lakeview Chicken Breast (1 lb) @ $11.97\n2 x Northfarm Butter (8 oz) @ $7.58",
+  "expected": [
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 1,
+    "price": 3.19,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 1,
+    "price": 2.79,
+    "size_text": "6 ct"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 1,
+    "price": 4.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Lakeview Olive Oil",
+    "quantity": 2,
+    "price": 15.98,
+    "size_text": "500 ml"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 1,
+    "price": 2.29,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Plain & Simple Granulated Sugar",
+    "quantity": 1,
+    "price": 3.49,
+    "size_text": "4 lb"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Northfarm Butter",
+    "quantity": 2,
+    "price": 7.58,
+    "size_text": "8 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-43",
+  "text": "2 x Green Acre Frozen Peas (12 oz) @ $3.58\n1 x Plain & Simple Black Beans (15 oz) @ $1.19\n3 x Lakeview Ice Cream (1.42 L) @ $14.97\n1 x Lakeview Chicken Breast (1 lb) @ $3.99\n2 x Fancy Farms Greek Yogurt (32 oz) @ $10.98\n1 x Green Acre Baby Spinach (5 oz) @ $2.49",
+  "expected": [
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 1,
+    "price": 1.19,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Lakeview Ice Cream",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1.42 L"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 2,
+    "price": 10.98,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "5 oz"
+   }
+  ]
+ },
+ {
+  "id": "eval-44",
+  "text": "1 x Green Acre Baby Spinach (5 oz) @ $2.49\n1 x Fresh Pick Gala Apples (3 lb) @ $3.99\n1 x Oven Joy Frozen Pizza (14 oz) @ $5.49\n3 x Plain & Simple Spaghetti (16 oz) @ $4.47\n1 x Harvest Gold Plain Bagels (6 ct) @ $2.79\n2 x Fresh Pick Roma Tomatoes (1 lb) @ $2.98",
+  "expected": [
+   {
+    "description": "Green Acre Baby Spinach",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "5 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Oven Joy Frozen Pizza",
+    "quantity": 1,
+    "price": 5.49,
+    "size_text": "14 oz"
+   },
+   {
+    "description": "Plain & Simple Spaghetti",
+    "quantity": 3,
+    "price": 4.47,
+    "size_text": "16 oz"
+   },
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 1,
+    "price": 2.79,
+    "size_text": "6 ct"
+   },
+   {
+    "description": "Fresh Pick Roma Tomatoes",
+    "quantity": 2,
+    "price": 2.98,
+    "size_text": "1 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-45",
+  "text": "3 x Fresh Pick Carrots (2 lb) @ $5.97\n3 x Lakeview Ice Cream (1.42 L) @ $14.97\n2 x Lakeview Cheddar Cheese (8 oz) @ $5.98\n3 x Lakeview Ground Beef (1 lb) @ $14.97\n3 x Harvest Gold Plain Bagels (6 ct) @ $8.37",
+  "expected": [
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 3,
+    "price": 5.97,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Lakeview Ice Cream",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1.42 L"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 2,
+    "price": 5.98,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Lakeview Ground Beef",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 3,
+    "price": 8.37,
+    "size_text": "6 ct"
+   }
+  ]
+ },
+ {
+  "id": "eval-46",
+  "text": "3 x Northfarm Whole Milk (3.79 L) @ $12.87\n2 x Green Acre Plain Yogurt (32 oz) @ $6.38\n1 x Northfarm Orange Juice (52 floz) @ $4.49\n1 x Fresh Pick Carrots (2 lb) @ $1.99\n3 x Fresh Pick Bananas (1 lb) @ $2.07",
+  "expected": [
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 3,
+    "price": 12.87,
+    "size_text": "3.79 L"
+   },
+   {
+    "description": "Green Acre Plain Yogurt",
+    "quantity": 2,
+    "price": 6.38,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Northfarm Orange Juice",
+    "quantity": 1,
+    "price": 4.49,
+    "size_text": "52 floz"
+   },
+   {
+    "description": "Fresh Pick Carrots",
+    "quantity": 1,
+    "price": 1.99,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Fresh Pick Bananas",
+    "quantity": 3,
+    "price": 2.07,
+    "size_text": "1 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-47",
+  "text": "3 x Harvest Gold Plain Bagels (6 ct) @ $8.37\n1 x Lakeview Chicken Breast (1 lb) @ $3.99\n2 x Green Acre Frozen Peas (12 oz) @ $3.58\n3 x Harvest Gold Whole Wheat Bread (20 oz) @ $9.87\n1 x Plain & Simple Long Grain Rice (2 lb) @ $2.29\n2 x Plain & Simple Granulated Sugar (4 lb) @ $6.98",
+  "expected": [
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 3,
+    "price": 8.37,
+    "size_text": "6 ct"
+   },
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 1,
+    "price": 3.99,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Green Acre Frozen Peas",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "12 oz"
+   },
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 3,
+    "price": 9.87,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 1,
+    "price": 2.29,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Plain & Simple Granulated Sugar",
+    "quantity": 2,
+    "price": 6.98,
+    "size_text": "4 lb"
+   }
+  ]
+ },
+ {
+  "id": "eval-48",
+  "text": "3 x Lakeview Crushed Tomatoes (28 oz) @ $5.37\n3 x Plain & Simple Long Grain Rice (2 lb) @ $6.87\n3 x Northfarm Whole Milk (3.79 L) @ $12.87",
+  "expected": [
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 3,
+    "price": 5.37,
+    "size_text": "28 oz"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 3,
+    "price": 6.87,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Northfarm Whole Milk",
+    "quantity": 3,
+    "price": 12.87,
+    "size_text": "3.79 L"
+   }
+  ]
+ },
+ {
+  "id": "eval-49",
+  "text": "2 x Lakeview Chicken Breast (1 lb) @ $7.98\n3 x Fancy Farms Greek Yogurt (32 oz) @ $16.47\n2 x Plain & Simple Black Beans (15 oz) @ $2.38\n3 x Fresh Pick Gala Apples (3 lb) @ $11.97\n1 x Harvest Gold Plain Bagels (6 ct) @ $2.79\n3 x Plain & Simple Long Grain Rice (2 lb) @ $6.87\n2 x Lakeview Cheddar Cheese (8 oz) @ $5.98\n3 x Lakeview Ice Cream (1.42 L) @ $14.97",
+  "expected": [
+   {
+    "description": "Lakeview Chicken Breast",
+    "quantity": 2,
+    "price": 7.98,
+    "size_text": "1 lb"
+   },
+   {
+    "description": "Fancy Farms Greek Yogurt",
+    "quantity": 3,
+    "price": 16.47,
+    "size_text": "32 oz"
+   },
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 2,
+    "price": 2.38,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Fresh Pick Gala Apples",
+    "quantity": 3,
+    "price": 11.97,
+    "size_text": "3 lb"
+   },
+   {
+    "description": "Harvest Gold Plain Bagels",
+    "quantity": 1,
+    "price": 2.79,
+    "size_text": "6 ct"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 3,
+    "price": 6.87,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Lakeview Cheddar Cheese",
+    "quantity": 2,
+    "price": 5.98,
+    "size_text": "8 oz"
+   },
+   {
+    "description": "Lakeview Ice Cream",
+    "quantity": 3,
+    "price": 14.97,
+    "size_text": "1.42 L"
+   }
+  ]
+ },
+ {
+  "id": "eval-50",
+  "text": "2 x Plain & Simple Black Beans (15 oz) @ $2.38\n3 x Plain & Simple Long Grain Rice (2 lb) @ $6.87\n1 x Harvest Gold Whole Wheat Bread (20 oz) @ $3.29\n1 x Plain & Simple Flour Tortillas (10 ct) @ $2.49\n2 x Lakeview Crushed Tomatoes (28 oz) @ $3.58",
+  "expected": [
+   {
+    "description": "Plain & Simple Black Beans",
+    "quantity": 2,
+    "price": 2.38,
+    "size_text": "15 oz"
+   },
+   {
+    "description": "Plain & Simple Long Grain Rice",
+    "quantity": 3,
+    "price": 6.87,
+    "size_text": "2 lb"
+   },
+   {
+    "description": "Harvest Gold Whole Wheat Bread",
+    "quantity": 1,
+    "price": 3.29,
+    "size_text": "20 oz"
+   },
+   {
+    "description": "Plain & Simple Flour Tortillas",
+    "quantity": 1,
+    "price": 2.49,
+    "size_text": "10 ct"
+   },
+   {
+    "description": "Lakeview Crushed Tomatoes",
+    "quantity": 2,
+    "price": 3.58,
+    "size_text": "28 oz"
+   }
+  ]
+ }
+]
