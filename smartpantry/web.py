@@ -249,8 +249,20 @@ class Handler(BaseHTTPRequestHandler):
 def create_server(port=8000, db_path="smartpantry-web.db",
                   inbox_dir="receipts", live=False, replay_only=False,
                   stores=None):
-    server = HTTPServer(("127.0.0.1", port),
-                        Handler)
-    server.app = App(db_path, inbox_dir, live=live,
-                     replay_only=replay_only, stores=stores)
+
+    host = os.environ.get("HOST", "0.0.0.0")
+    port = int(os.environ.get("PORT", port))
+
+    server = HTTPServer((host, port), Handler)
+
+    server.app = App(
+        db_path,
+        inbox_dir,
+        live=live,
+        replay_only=replay_only,
+        stores=stores
+    )
+
+    print(f"SmartPantry server running on {host}:{port}", flush=True)
+
     return server
