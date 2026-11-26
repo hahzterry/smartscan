@@ -1,312 +1,2680 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SmartPantry — SmartCart</title>
+<meta name="theme-color" content="#087443">
+
+<title>Camp Creek Market | Local Sales & Deals in Atlanta</title>
+
+<meta name="description"
+      content="Discover local sales, weekly ads, discounts and shopping deals from stores near Camp Creek Marketplace and I-285 Exit 2 in Atlanta, Georgia.">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title"
+      content="Camp Creek Market | Every Store. Every Sale. One Exit.">
+
+<meta property="og:description"
+      content="Discover advertised deals from your favorite Camp Creek area stores.">
+
+<meta property="og:type" content="website">
+
 <style>
-  :root {
-    --ink: #1a1d1a;
-    --muted: #4c554c;
-    --line: #dfe3dd;
+:root {
+    --green: #087443;
+    --green-dark: #055532;
+    --green-light: #e8f7ef;
+    --lime: #d5ff54;
+    --ink: #111914;
+    --muted: #68736c;
+    --line: #e0e6e1;
     --paper: #ffffff;
-    --wash: #eef1ec;
-    --accent: #1e7e34;
-    --accent-dark: #155d27;
-    --warn: #9a6700;
-    --bad: #b3261e;
-  }
-  * { box-sizing: border-box; }
-  body {
+    --background: #f5f7f5;
+    --red: #c62828;
+    --orange: #a85b00;
+    --radius: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     margin: 0;
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--background);
     color: var(--ink);
-    background: var(--wash);
+    font-family: system-ui, -apple-system,
+                 BlinkMacSystemFont, "Segoe UI", sans-serif;
     line-height: 1.5;
-  }
-  main { max-width: 640px; margin: 0 auto; padding: 20px 16px 48px; }
-  header.top { margin: 4px 0 16px; }
-  header.top h1 { font-size: 26px; margin: 0; letter-spacing: -0.01em; }
-  header.top h1 span { color: var(--accent); }
-  header.top p { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
-  section {
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .55;
+    cursor: wait;
+}
+
+button,
+input,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+a:focus-visible {
+    outline: 3px solid #73bf98;
+    outline-offset: 3px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* HEADER */
+
+.site-header {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 950;
+    letter-spacing: -1.4px;
+    line-height: 1.05;
+}
+
+.brand span {
+    color: var(--green);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--green);
+}
+
+.location svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* HERO */
+
+.hero {
+    background: var(--green);
+    color: white;
+    padding: 48px 0 42px;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    background: var(--lime);
+    color: var(--ink);
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 20px 0 16px;
+    font-size: clamp(42px, 7vw, 76px);
+    font-weight: 950;
+    line-height: .99;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: var(--lime);
+}
+
+.hero p {
+    margin: 0;
+    max-width: 560px;
+    font-size: 17px;
+    color: #e0f5e9;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 7px;
+    margin-top: 28px;
+    border-radius: 14px;
+    gap: 8px;
+}
+
+.search-icon {
+    flex-shrink: 0;
+    margin-left: 10px;
+    width: 23px;
+    height: 23px;
+    color: var(--muted);
+}
+
+.search-form input {
+    min-width: 0;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px 4px;
+    font-size: 16px;
+    color: var(--ink);
+    background: transparent;
+}
+
+.search-form button {
+    background: var(--lime);
+    color: var(--ink);
+    border: 0;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+/* MARKET STATS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.stat {
+    padding: 18px;
     background: var(--paper);
     border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 16px;
+    border-radius: var(--radius);
+}
+
+.stat strong {
+    display: block;
+    font-size: 29px;
+    font-weight: 900;
+    color: var(--green);
+    letter-spacing: -1px;
+}
+
+.stat span {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 650;
+}
+
+/* FILTERS */
+
+.filter-panel {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px;
+    margin-bottom: 26px;
+}
+
+.filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 14px;
-  }
-  section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em;
-    color: var(--muted); margin: 0 0 10px; }
-  .row { display: flex; gap: 10px; flex-wrap: wrap; }
-  .field { flex: 1 1 140px; }
-  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
-  input[type="text"], input[type="date"] {
-    width: 100%; min-height: 44px; padding: 8px 10px; font-size: 16px;
-    border: 1px solid var(--line); border-radius: 6px; color: var(--ink);
+}
+
+.filter-heading h2 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.clear-button {
+    border: 0;
+    background: transparent;
+    color: var(--green);
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: white;
+    color: var(--ink);
+    font-size: 16px;
+}
+
+.quick-filters {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 16px 0 2px;
+    scrollbar-width: none;
+}
+
+.quick-filters::-webkit-scrollbar {
+    display: none;
+}
+
+.chip {
+    flex-shrink: 0;
+    padding: 9px 16px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.chip.active {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
+}
+
+/* DEAL FEED */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 24px 0 12px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.section-heading p {
+    margin: 3px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.refresh-button {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.status {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 12px 0;
+}
+
+.status.error {
+    color: var(--red);
+}
+
+.notice {
+    padding: 12px 14px;
+    border: 1px solid var(--line);
     background: #fff;
-  }
-  input[type="file"] { font-size: 15px; max-width: 100%; }
-  button {
-    min-height: 44px; padding: 10px 18px; font-size: 16px; font-weight: 600;
-    border-radius: 6px; border: 1px solid transparent; cursor: pointer;
-  }
-  button.primary { background: var(--accent); color: #fff; }
-  button.primary:active { background: var(--accent-dark); }
-  button.ghost { background: #fff; border-color: var(--line); color: var(--ink); }
-  button:disabled { opacity: 0.55; cursor: wait; }
-  .actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
-  #status { font-size: 14px; color: var(--muted); min-height: 22px; margin-top: 10px; }
-  #status.error { color: var(--bad); }
-  .hidden { display: none; }
-  .score { display: flex; gap: 18px; align-items: baseline; flex-wrap: wrap; }
-  .score .big { font-size: 30px; font-weight: 700; }
-  .score .big.save { color: var(--accent); }
-  .score .sub { color: var(--muted); font-size: 14px; }
-  ul.results { list-style: none; margin: 12px 0 0; padding: 0; }
-  ul.results li {
-    padding: 10px 0; border-top: 1px solid var(--line);
-    display: flex; justify-content: space-between; gap: 12px; align-items: baseline;
-  }
-  ul.results li:first-child { border-top: 0; }
-  .item-name { font-weight: 600; }
-  .item-detail { font-size: 14px; color: var(--muted); }
-  .pill {
-    display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 8px;
-    border-radius: 20px; white-space: nowrap; margin-left: 8px;
-  }
-  .pill.buy { background: #e3f2e7; color: var(--accent-dark); }
-  .pill.switch { background: #fff4d6; color: var(--warn); }
-  .pill.wait { background: #f1e4e2; color: var(--bad); }
-  .money { text-align: right; white-space: nowrap; }
-  .money .save { color: var(--accent); font-weight: 700; }
-  .money .cost { color: var(--muted); }
-  ul.notes { margin: 12px 0 0; padding-left: 20px; font-size: 14px; color: var(--muted); }
-  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
-  @media (max-width: 480px) {
-    header.top h1 { font-size: 22px; }
-    .actions button { flex: 1 1 100%; }
-  }
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 12px;
+    margin: 12px 0 20px;
+}
+
+.deal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.deal-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.deal-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px #00000009;
+}
+
+.deal-visual {
+    height: 155px;
+    background: var(--green-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.deal-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: white;
+}
+
+.merchant-monogram {
+    font-size: 40px;
+    font-weight: 950;
+    color: var(--green);
+    letter-spacing: -2px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px 10px;
+    background: var(--red);
+    color: white;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.deal-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+}
+
+.merchant-name {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+
+.deal-name {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 800;
+    margin: 8px 0 12px;
+    overflow-wrap: anywhere;
+}
+
+.price-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.sale-price {
+    color: var(--green);
+    font-size: 28px;
+    font-weight: 950;
+    letter-spacing: -1px;
+}
+
+.old-price {
+    color: var(--muted);
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.savings {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 3px;
+}
+
+.deal-details {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 10px;
+    overflow-wrap: anywhere;
+}
+
+.conditions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.condition {
+    font-size: 10px;
+    font-weight: 750;
+    background: #fff4db;
+    color: var(--orange);
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.deal-footer {
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.expiration {
+    font-size: 11px;
+    color: var(--muted);
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+}
+
+.share-button {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background: var(--green-light);
+    border: 0;
+    border-radius: 8px;
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 850;
+}
+
+/* EMPTY STATE */
+
+.empty {
+    text-align: center;
+    background: white;
+    border: 1px dashed var(--line);
+    border-radius: var(--radius);
+    padding: 50px 20px;
+}
+
+.empty-icon {
+    font-size: 42px;
+}
+
+.empty h3 {
+    font-size: 22px;
+    margin: 10px 0 5px;
+}
+
+.empty p {
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 420px;
+    margin: auto;
+}
+
+.load-more {
+    display: block;
+    margin: 25px auto;
+    padding: 13px 28px;
+    background: var(--green);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 850;
+}
+
+/* ADMIN RECEIPTS */
+
+.admin-panel {
+    margin: 42px 0 20px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: white;
+    padding: 18px;
+}
+
+.admin-panel summary {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 750;
+    color: var(--muted);
+}
+
+.admin-content {
+    margin-top: 18px;
+}
+
+.admin-content h3 {
+    margin-top: 0;
+}
+
+.admin-content .field {
+    margin-bottom: 14px;
+}
+
+.admin-content input[type="file"] {
+    max-width: 100%;
+}
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.primary,
+.secondary {
+    padding: 12px 18px;
+    border-radius: 9px;
+    font-weight: 800;
+    min-height: 44px;
+}
+
+.primary {
+    background: var(--green);
+    color: white;
+    border: 1px solid var(--green);
+}
+
+.secondary {
+    background: white;
+    border: 1px solid var(--line);
+    color: var(--ink);
+}
+
+.result-panel {
+    margin-top: 20px;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+}
+
+.result-panel h3 {
+    margin-bottom: 10px;
+}
+
+.result-saving {
+    color: var(--green);
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.receipt-row {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.receipt-row strong {
+    display: block;
+}
+
+.receipt-row small {
+    color: var(--muted);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    background: #101d15;
+    color: white;
+    padding: 38px 0;
+}
+
+footer .brand {
+    font-size: 25px;
+}
+
+footer .brand span {
+    color: var(--lime);
+}
+
+footer p {
+    color: #b3c5b9;
+    font-size: 13px;
+    max-width: 600px;
+}
+
+footer .copyright {
+    font-size: 11px;
+    margin-top: 24px;
+}
+
+/* MOBILE */
+
+@media (max-width: 950px) {
+    .deal-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .nav {
+        min-height: 65px;
+    }
+
+    .brand {
+        font-size: 21px;
+    }
+
+    .location {
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 34px 0;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2.5px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .stats {
+        gap: 7px;
+    }
+
+    .stat {
+        padding: 12px 9px;
+    }
+
+    .stat strong {
+        font-size: 24px;
+    }
+
+    .stat span {
+        font-size: 10px;
+    }
+
+    .filter-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-grid .field:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .deal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .deal-visual {
+        height: 125px;
+    }
+
+    .deal-body {
+        padding: 12px;
+    }
+
+    .deal-name {
+        font-size: 14px;
+    }
+
+    .sale-price {
+        font-size: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .search-form button {
+        padding: 12px 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
 </style>
 </head>
+
 <body>
-<main>
-  <header class="top">
-    <h1>Smart<span>Scan</span></h1>
-    <p>SmartCart: snap a receipt, see this week's deals.</p>
-  </header>
 
-  <section aria-label="Upload receipts">
-    <h2>1 · Receipts</h2>
-    <div class="row">
-      <div class="field">
-        <label for="files">Receipt files (.txt, .json, photos, PDF)</label>
-        <input id="files" type="file" multiple
-               accept=".txt,.json,.jpg,.jpeg,.png,.pdf,image/*">
-      </div>
-    </div>
-    <div class="row" style="margin-top:10px">
-      <div class="field">
-        <label for="camera">Or snap one now (phone camera)</label>
-        <input id="camera" type="file" accept="image/*" capture="environment">
-      </div>
-    </div>
-    <div class="row" style="margin-top:10px">
-      <div class="field">
-        <label for="date">Date (used when the filename has none)</label>
-        <input id="date" type="text" value="2026-11-03">
-      </div>
-      <div class="field">
-        <label for="store">Store (used when the filename has none)</label>
-        <input id="store" type="text" value="Mariano's">
-      </div>
-    </div>
-    <div class="actions">
-      <button id="scan" class="primary" type="button">Scan receipts</button>
-      <button id="demo" class="ghost" type="button">Load demo receipts</button>
-    </div>
-    <div id="status" role="status"></div>
-  </section>
+<header class="site-header">
+    <div class="container nav">
 
-  <section id="resultsCard" class="hidden" aria-label="Results">
-    <h2>2 · SmartCart</h2>
-    <div class="score">
-      <div class="big save" id="saving">$0.00</div>
-      <div class="sub" id="totals"></div>
-    </div>
-    <ul class="results" id="rows"></ul>
-    <ul class="notes" id="notes"></ul>
-  </section>
+        <a class="brand" href="/">
+            Camp Creek <span>Market</span>
+        </a>
 
-  <section id="cartCard" class="hidden" aria-label="Draft cart">
-    <h2>3 · Draft cart</h2>
-    <p id="cartText" style="margin:0 0 10px"></p>
-    <div class="actions">
-      <button id="approve" class="primary" type="button">Approve cart</button>
-      <button id="decline" class="ghost" type="button">Decline</button>
+        <div class="location">
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 aria-hidden="true">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            ATL · EXIT 2
+        </div>
+
     </div>
-    <div id="cartStatus" role="status" style="margin-top:10px;font-size:14px"></div>
-  </section>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+
+        <div class="eyebrow">
+            Your local deals destination
+        </div>
+
+        <h1>
+            Every Store.<br>
+            Every Sale.<br>
+            <span>One Exit.</span>
+        </h1>
+
+        <p>
+            Discover the latest advertised sales and
+            shopping deals around Camp Creek Parkway
+            in Atlanta, Georgia.
+        </p>
+
+        <form id="searchForm" class="search-form">
+
+            <svg class="search-icon"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="7"/>
+                <path d="m16 16 5 5"/>
+            </svg>
+
+            <input
+                id="search"
+                type="search"
+                aria-label="Search local deals"
+                placeholder="Search shoes, TVs, groceries..."
+                autocomplete="off">
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<main class="container">
+
+    <section class="stats" aria-label="Market statistics">
+
+        <div class="stat">
+            <strong id="dealCount">—</strong>
+            <span>Advertised Deals</span>
+        </div>
+
+        <div class="stat">
+            <strong id="storeCount">—</strong>
+            <span>Tracked Stores</span>
+        </div>
+
+        <div class="stat">
+            <strong id="bestDiscount">—</strong>
+            <span>Top Discount</span>
+        </div>
+
+    </section>
+
+    <section class="filter-panel" aria-label="Deal filters">
+
+        <div class="filter-heading">
+
+            <h2>Find your next deal</h2>
+
+            <button
+                id="clearFilters"
+                class="clear-button"
+                type="button">
+                Clear filters
+            </button>
+
+        </div>
+
+        <div class="filter-grid">
+
+            <div class="field">
+                <label for="merchant">Store</label>
+
+                <select id="merchant">
+                    <option value="">All stores</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="minDiscount">Discount</label>
+
+                <select id="minDiscount">
+                    <option value="0">Any discount</option>
+                    <option value="25">25%+ off</option>
+                    <option value="50">50%+ off</option>
+                    <option value="75">75%+ off</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="maxPrice">Price</label>
+
+                <select id="maxPrice">
+                    <option value="">Any price</option>
+                    <option value="10">$10 or less</option>
+                    <option value="25">$25 or less</option>
+                    <option value="50">$50 or less</option>
+                    <option value="100">$100 or less</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="quick-filters">
+
+            <button class="chip active"
+                    type="button"
+                    data-filter="all">
+                All Deals
+            </button>
+
+            <button class="chip"
+                    type="button"
+                    data-filter="50">
+                50%+ OFF
+            </button>
+
+            <button class="chip"
+                    type="button"
+                    data-filter="75">
+                75%+ OFF
+            </button>
+
+            <button class="chip"
+                    type="button"
+                    data-filter="under10">
+                Under $10
+            </button>
+
+            <button class="chip"
+                    type="button"
+                    data-filter="under25">
+                Under $25
+            </button>
+
+        </div>
+
+    </section>
+
+    <section id="deals" aria-label="Local deals">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>Shop the Sales</h2>
+                <p>Weekly ads from tracked local retailers.</p>
+            </div>
+
+            <button
+                id="refresh"
+                class="refresh-button"
+                type="button">
+                ↻ Refresh
+            </button>
+
+        </div>
+
+        <div id="dealStatus"
+             class="status"
+             role="status"
+             aria-live="polite">
+            Finding local deals...
+        </div>
+
+        <div id="locationNotice" class="notice">
+            Advertised regional offers may vary by store.
+            Confirm availability, pricing and conditions
+            at the Camp Creek location before visiting.
+        </div>
+
+        <div id="dealGrid" class="deal-grid"></div>
+
+        <div id="emptyState" class="empty" hidden>
+
+            <div class="empty-icon">🛍️</div>
+
+            <h3 id="emptyTitle">No deals found</h3>
+
+            <p id="emptyMessage">
+                Try another store or remove your filters.
+            </p>
+
+        </div>
+
+        <button id="loadMore"
+                class="load-more"
+                type="button"
+                hidden>
+            Load More Deals
+        </button>
+
+    </section>
+
+    <!-- PRIVATE ADMIN RECEIPT SCANNER -->
+
+    <details class="admin-panel">
+
+        <summary>Administrator tools</summary>
+
+        <div class="admin-content">
+
+            <h3>Private Receipt Scanner</h3>
+
+            <p class="status">
+                Optional receipt analysis for administrators.
+                Public deal browsing does not require receipts.
+            </p>
+
+            <div class="field">
+
+                <label for="adminToken">
+                    Admin access token
+                </label>
+
+                <input id="adminToken"
+                       type="password"
+                       autocomplete="off"
+                       placeholder="Enter admin token">
+
+            </div>
+
+            <div class="field">
+
+                <label for="files">
+                    Upload receipts
+                </label>
+
+                <input id="files"
+                       type="file"
+                       multiple
+                       accept=".txt,.json,.jpg,.jpeg,.png,.pdf,image/*">
+
+            </div>
+
+            <div class="field">
+
+                <label for="camera">
+                    Take a receipt photo
+                </label>
+
+                <input id="camera"
+                       type="file"
+                       accept="image/*"
+                       capture="environment">
+
+            </div>
+
+            <div class="field">
+
+                <label for="date">Purchase date</label>
+
+                <input id="date" type="date">
+
+            </div>
+
+            <div class="field">
+
+                <label for="receiptStore">Store</label>
+
+                <input id="receiptStore"
+                       type="text"
+                       placeholder="Store name">
+
+            </div>
+
+            <div class="admin-actions">
+
+                <button id="scan"
+                        class="primary"
+                        type="button">
+                    Scan Receipts
+                </button>
+
+                <button id="demo"
+                        class="secondary"
+                        type="button">
+                    Load Demo
+                </button>
+
+            </div>
+
+            <div id="adminStatus"
+                 class="status"
+                 role="status"></div>
+
+            <div id="resultsCard"
+                 class="result-panel"
+                 hidden>
+
+                <h3>Receipt Savings</h3>
+
+                <div id="saving"
+                     class="result-saving"></div>
+
+                <div id="totals"
+                     class="status"></div>
+
+                <div id="receiptRows"></div>
+
+                <ul id="notes"></ul>
+
+            </div>
+
+            <div id="cartCard"
+                 class="result-panel"
+                 hidden>
+
+                <h3>Draft Shopping Cart</h3>
+
+                <p id="cartText"></p>
+
+                <div class="admin-actions">
+
+                    <button id="approve"
+                            class="primary"
+                            type="button">
+                        Approve Cart
+                    </button>
+
+                    <button id="decline"
+                            class="secondary"
+                            type="button">
+                        Decline
+                    </button>
+
+                </div>
+
+                <div id="cartStatus"
+                     class="status"
+                     role="status"></div>
+
+            </div>
+
+        </div>
+
+    </details>
+
 </main>
+
+<footer>
+    <div class="container">
+
+        <div class="brand">
+            Camp Creek <span>Market</span>
+        </div>
+
+        <p>
+            Every Store. Every Sale. One Exit.
+        </p>
+
+        <p>
+            Camp Creek Parkway · I-285 Exit 2 · Atlanta, Georgia
+        </p>
+
+        <p>
+            An independent local shopping deals website.
+            Not affiliated with Camp Creek Marketplace
+            or the retailers listed. Advertised prices,
+            promotions and availability are subject to change.
+        </p>
+
+        <p class="copyright">
+            © <span id="year"></span> Camp Creek Market.
+            All rights reserved.
+        </p>
+
+    </div>
+</footer>
 
 <script>
 (function () {
-  "use strict";
-  var scanBtn = document.getElementById("scan");
-  var statusEl = document.getElementById("status");
-  var resultsCard = document.getElementById("resultsCard");
-  var cartCard = document.getElementById("cartCard");
-  var approvalId = null;
 
-  function money(n) {
-    if (n === null || n === undefined) return "—";
-    return "$" + Number(n).toFixed(2);
-  }
-  function pill(decision) {
-    var label = decision.replace("_", " ");
-    var cls = decision === "buy_now" ? "buy"
-      : decision === "switch_store" ? "switch" : "wait";
-    return '<span class="pill ' + cls + '">' + label + "</span>";
-  }
-  function esc(s) {
-    return String(s).replace(/[&<>"]/g, function (c) {
-      return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c];
-    });
-  }
+    "use strict";
 
-  scanBtn.addEventListener("click", function () {
-    var picked = Array.prototype.slice.call(
-      document.getElementById("files").files);
-    var snapped = document.getElementById("camera").files;
-    if (snapped.length) picked.push(snapped[0]);
-    if (!picked.length) {
-      statusEl.textContent = "Choose at least one receipt file first.";
-      statusEl.className = "error";
-      return;
-    }
-    var form = new FormData();
-    picked.forEach(function (f) { form.append("receipts", f, f.name); });
-    var date = encodeURIComponent(document.getElementById("date").value);
-    var store = encodeURIComponent(document.getElementById("store").value);
-    statusEl.textContent = "Scanning " + picked.length + " file(s)…";
-    statusEl.className = "";
-    scanBtn.disabled = true;
-    fetch("/api/ingest?date=" + date + "&store=" + store,
-          {method: "POST", body: form})
-      .then(function (r) { return r.json().then(function (j) {
-        return {ok: r.ok, body: j};
-      }); })
-      .then(function (res) {
-        scanBtn.disabled = false;
-        if (!res.ok || res.body.error) {
-          statusEl.textContent = "Error: " + (res.body.error || res.status);
-          statusEl.className = "error";
-          return;
+    const $ = id => document.getElementById(id);
+
+    const PAGE_SIZE = 24;
+    const REFRESH_INTERVAL = 5 * 60 * 1000;
+
+    let deals = [];
+    let merchants = [];
+    let visibleCount = PAGE_SIZE;
+    let approvalId = null;
+    let requestId = 0;
+    let activeController = null;
+    let adminBusy = false;
+
+    $("year").textContent = new Date().getFullYear();
+
+    const dateParts = new Intl.DateTimeFormat(
+        "en-US",
+        {
+            timeZone: "America/New_York",
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit"
         }
-        render(res.body);
-      })
-      .catch(function (err) {
-        scanBtn.disabled = false;
-        statusEl.textContent = "Error: " + err.message;
-        statusEl.className = "error";
-      });
-  });
+    ).formatToParts(new Date());
 
-  document.getElementById("demo").addEventListener("click", function () {
-    var btn = this;
-    statusEl.textContent = "Loading demo receipts…";
-    statusEl.className = "";
-    btn.disabled = true;
-    fetch("/api/demo", {method: "POST"})
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        btn.disabled = false;
-        if (data.error) {
-          statusEl.textContent = "Error: " + data.error;
-          statusEl.className = "error";
-          return;
+    const dateValues = {};
+
+    dateParts.forEach(part => {
+        dateValues[part.type] = part.value;
+    });
+
+    $("date").value =
+        dateValues.year + "-" +
+        dateValues.month + "-" +
+        dateValues.day;
+
+    function number(value) {
+
+        if (
+            value === null ||
+            value === undefined ||
+            value === "" ||
+            typeof value === "boolean"
+        ) {
+            return null;
         }
-        render(data);
-      })
-      .catch(function (err) {
-        btn.disabled = false;
-        statusEl.textContent = "Error: " + err.message;
-        statusEl.className = "error";
-      });
-  });
 
-  function render(data) {
-    statusEl.textContent = data.purchases + " item(s) read, " +
-      data.review + " queued for review.";
-    statusEl.className = "";
-    var totals = data.totals || {total: 0, saving: 0};
-    document.getElementById("saving").textContent = money(totals.saving);
-    document.getElementById("totals").textContent =
-      "deal total " + money(totals.total);
-    var rows = document.getElementById("rows");
-    rows.innerHTML = "";
-    (data.rows || []).forEach(function (r) {
-      var li = document.createElement("li");
-      var save = r.saving === null ? ""
-        : '<div class="' + (r.saving > 0 ? "save" : "cost") + '">' +
-          (r.saving > 0 ? "save " + money(r.saving) : money(r.saving)) +
-          "</div>";
-      li.innerHTML =
-        '<div><span class="item-name">' + esc(r.name) + "</span>" +
-        pill(r.decision) +
-        '<div class="item-detail">You paid ' + money(r.paid) +
-        " · deal " + money(r.deal) + " @ " + esc(r.store) + "</div></div>" +
-        '<div class="money">' + save + "</div>";
-      rows.appendChild(li);
-    });
-    if (!(data.rows || []).length) {
-      rows.innerHTML = "<li><div class='item-detail'>" +
-        "No priced items yet — add another receipt so items recur.</div></li>";
-    }
-    var notes = document.getElementById("notes");
-    notes.innerHTML = "";
-    (data.notes || []).forEach(function (n) {
-      var li = document.createElement("li");
-      li.textContent = n;
-      notes.appendChild(li);
-    });
-    resultsCard.classList.remove("hidden");
-    approvalId = data.approval_id || null;
-    if (approvalId) {
-      document.getElementById("cartText").textContent =
-        "Draft cart totals " + money(totals.total) +
-        ". Nothing is ordered until you approve.";
-      document.getElementById("cartStatus").textContent = "";
-      cartCard.classList.remove("hidden");
-    } else {
-      cartCard.classList.add("hidden");
-    }
-  }
+        const parsed = Number(value);
 
-  function decide(approved) {
-    if (!approvalId) return;
-    fetch("/api/approve", {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({approval_id: approvalId, approved: approved})
-    })
-      .then(function (r) { return r.json(); })
-      .then(function (j) {
-        document.getElementById("cartStatus").textContent =
-          j.error ? "Error: " + j.error : "Cart " + j.status + ".";
-      })
-      .catch(function (err) {
-        document.getElementById("cartStatus").textContent =
-          "Error: " + err.message;
-      });
-  }
-  document.getElementById("approve").addEventListener("click", function () {
-    decide(true);
-  });
-  document.getElementById("decline").addEventListener("click", function () {
-    decide(false);
-  });
+        return Number.isFinite(parsed)
+            ? parsed
+            : null;
+    }
+
+    function money(value) {
+
+        const parsed = number(value);
+
+        if (parsed === null) {
+            return "—";
+        }
+
+        return new Intl.NumberFormat(
+            "en-US",
+            {
+                style: "currency",
+                currency: "USD"
+            }
+        ).format(parsed);
+    }
+
+    function element(tag, className, content) {
+
+        const node = document.createElement(tag);
+
+        if (className) {
+            node.className = className;
+        }
+
+        if (content !== undefined) {
+            node.textContent = String(content);
+        }
+
+        return node;
+    }
+
+    function setStatus(id, message, error = false) {
+
+        const node = $(id);
+
+        node.textContent = message;
+
+        node.className = error
+            ? "status error"
+            : "status";
+    }
+
+    async function api(url, options = {}) {
+
+        const response = await fetch(url, {
+            cache: "no-store",
+            ...options
+        });
+
+        let payload;
+
+        try {
+            payload = await response.json();
+        } catch (error) {
+            throw new Error(
+                "The server returned an invalid response."
+            );
+        }
+
+        if (!response.ok || payload.error) {
+
+            throw new Error(
+                payload.error ||
+                "Server error " + response.status
+            );
+        }
+
+        return payload;
+    }
+
+    function safeImageUrl(value) {
+
+        if (!value || typeof value !== "string") {
+            return null;
+        }
+
+        try {
+
+            const url = new URL(value);
+
+            if (url.protocol === "https:") {
+                return url.href;
+            }
+
+        } catch (error) {
+            return null;
+        }
+
+        return null;
+    }
+
+    function normalizeDeal(raw) {
+
+        if (!raw || typeof raw !== "object") {
+            return null;
+        }
+
+        const name = String(
+            raw.name ||
+            raw.title ||
+            raw.product_name ||
+            ""
+        ).trim();
+
+        const merchant = String(
+            raw.merchant ||
+            raw.store ||
+            raw.merchant_name ||
+            ""
+        ).trim();
+
+        const price = number(
+            raw.price ??
+            raw.sale_price ??
+            raw.deal_price
+        );
+
+        const original = number(
+            raw.original_price ??
+            raw.regular_price ??
+            raw.was_price
+        );
+
+        if (
+            !name ||
+            !merchant ||
+            price === null ||
+            price < 0
+        ) {
+            return null;
+        }
+
+        let discount = null;
+        let saving = null;
+
+        if (
+            original !== null &&
+            original > price &&
+            original > 0
+        ) {
+
+            saving = original - price;
+
+            discount = Math.floor(
+                (saving / original) * 100
+            );
+
+        } else {
+
+            const advertisedDiscount = number(
+                raw.discount_percent ??
+                raw.discount_pct ??
+                raw.discount
+            );
+
+            if (
+                advertisedDiscount !== null &&
+                advertisedDiscount > 0 &&
+                advertisedDiscount <= 100
+            ) {
+                discount = Math.floor(
+                    advertisedDiscount
+                );
+            }
+        }
+
+        const validFrom = String(
+            raw.valid_from || ""
+        ).slice(0, 10);
+
+        const validTo = String(
+            raw.valid_to ||
+            raw.expires_at ||
+            ""
+        ).slice(0, 10);
+
+        const today = new Intl.DateTimeFormat(
+            "en-CA",
+            {
+                timeZone: "America/New_York",
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit"
+            }
+        ).formatToParts(new Date());
+
+        const parts = {};
+
+        today.forEach(part => {
+            parts[part.type] = part.value;
+        });
+
+        const currentDate =
+            parts.year + "-" +
+            parts.month + "-" +
+            parts.day;
+
+        const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+
+        if (
+            datePattern.test(validTo) &&
+            validTo < currentDate
+        ) {
+            return null;
+        }
+
+        if (
+            datePattern.test(validFrom) &&
+            validFrom > currentDate
+        ) {
+            return null;
+        }
+
+        return {
+            name,
+            merchant,
+            price,
+            original,
+            discount,
+            saving,
+            validTo,
+            details: String(raw.details || ""),
+            conditions: Array.isArray(raw.conditions)
+                ? raw.conditions
+                : [],
+            image: safeImageUrl(
+                raw.image_url ||
+                raw.image ||
+                raw.thumbnail_url
+            )
+        };
+    }
+
+    function merchantKey(name) {
+
+        return String(name)
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, "");
+    }
+
+    function updateMerchantOptions() {
+
+        const selected = $("merchant").value;
+
+        $("merchant").replaceChildren();
+
+        const all = element(
+            "option",
+            "",
+            "All stores"
+        );
+
+        all.value = "";
+
+        $("merchant").appendChild(all);
+
+        merchants.forEach(merchant => {
+
+            const option = element(
+                "option",
+                "",
+                merchant
+            );
+
+            option.value = merchant;
+
+            $("merchant").appendChild(option);
+        });
+
+        if (merchants.includes(selected)) {
+            $("merchant").value = selected;
+        }
+
+        $("storeCount").textContent =
+            merchants.length;
+
+        if (
+            !$("receiptStore").value &&
+            merchants.length
+        ) {
+            $("receiptStore").value = merchants[0];
+        }
+    }
+
+    async function loadMerchants() {
+
+        try {
+
+            const data = await api(
+                "/api/merchants"
+            );
+
+            const list = Array.isArray(data)
+                ? data
+                : data.merchants;
+
+            if (!Array.isArray(list)) {
+                throw new Error(
+                    "Merchant list unavailable."
+                );
+            }
+
+            merchants = Array.from(
+                new Set(
+                    list.map(item => {
+
+                        if (typeof item === "string") {
+                            return item.trim();
+                        }
+
+                        return String(
+                            item.name ||
+                            item.merchant ||
+                            ""
+                        ).trim();
+
+                    }).filter(Boolean)
+                )
+            ).sort((a, b) => a.localeCompare(b));
+
+            updateMerchantOptions();
+
+        } catch (error) {
+
+            console.error(
+                "Merchant loading failed:",
+                error
+            );
+
+            $("storeCount").textContent = "—";
+        }
+    }
+
+    function buildQuery() {
+
+        const params = new URLSearchParams();
+
+        const search = $("search").value.trim();
+        const merchant = $("merchant").value;
+        const discount = $("minDiscount").value;
+        const price = $("maxPrice").value;
+
+        if (search) {
+            params.set("search", search);
+        }
+
+        if (merchant) {
+            params.set("merchant", merchant);
+        }
+
+        if (discount !== "0") {
+            params.set("min_discount", discount);
+        }
+
+        if (price) {
+            params.set("max_price", price);
+        }
+
+        return params.toString();
+    }
+
+    async function loadDeals(resetPage = true) {
+
+        const currentRequest = ++requestId;
+
+        if (activeController) {
+            activeController.abort();
+        }
+
+        activeController = new AbortController();
+
+        if (resetPage) {
+            visibleCount = PAGE_SIZE;
+        }
+
+        $("refresh").disabled = true;
+
+        setStatus(
+            "dealStatus",
+            "Checking advertised deals..."
+        );
+
+        try {
+
+            const query = buildQuery();
+
+            const data = await api(
+                "/api/deals" +
+                (query ? "?" + query : ""),
+                {
+                    signal: activeController.signal
+                }
+            );
+
+            if (currentRequest !== requestId) {
+                return;
+            }
+
+            const rawDeals = Array.isArray(data)
+                ? data
+                : (
+                    data.deals ??
+                    data.items ??
+                    data.results
+                );
+
+            if (!Array.isArray(rawDeals)) {
+
+                throw new Error(
+                    "The deals API returned an unexpected format."
+                );
+            }
+
+            const allowedMerchants = new Set(
+                merchants.map(merchantKey)
+            );
+
+            const seen = new Set();
+
+            deals = rawDeals
+                .map(normalizeDeal)
+                .filter(Boolean)
+                .filter(deal => {
+
+                    if (
+                        allowedMerchants.size &&
+                        !allowedMerchants.has(
+                            merchantKey(deal.merchant)
+                        )
+                    ) {
+                        return false;
+                    }
+
+                    const key = [
+                        merchantKey(deal.merchant),
+                        deal.name.toLowerCase(),
+                        deal.price,
+                        deal.validTo
+                    ].join("|");
+
+                    if (seen.has(key)) {
+                        return false;
+                    }
+
+                    seen.add(key);
+
+                    return true;
+                });
+
+            const selectedMerchant =
+                $("merchant").value;
+
+            const minDiscount =
+                Number($("minDiscount").value);
+
+            const maxPrice =
+                number($("maxPrice").value);
+
+            const search =
+                $("search").value.trim().toLowerCase();
+
+            deals = deals.filter(deal => {
+
+                if (
+                    selectedMerchant &&
+                    merchantKey(deal.merchant) !==
+                    merchantKey(selectedMerchant)
+                ) {
+                    return false;
+                }
+
+                if (
+                    minDiscount > 0 &&
+                    (
+                        deal.discount === null ||
+                        deal.discount < minDiscount
+                    )
+                ) {
+                    return false;
+                }
+
+                if (
+                    maxPrice !== null &&
+                    deal.price > maxPrice
+                ) {
+                    return false;
+                }
+
+                if (search) {
+
+                    const text = [
+                        deal.name,
+                        deal.merchant,
+                        deal.details
+                    ].join(" ").toLowerCase();
+
+                    if (!text.includes(search)) {
+                        return false;
+                    }
+                }
+
+                return true;
+            });
+
+            deals.sort((a, b) => {
+
+                return (
+                    (b.discount ?? -1) -
+                    (a.discount ?? -1)
+                ) || (a.price - b.price);
+            });
+
+            renderDeals();
+
+            const discounts = deals
+                .map(deal => deal.discount)
+                .filter(value => value !== null);
+
+            $("dealCount").textContent =
+                deals.length;
+
+            $("bestDiscount").textContent =
+                discounts.length
+                    ? Math.max(...discounts) + "%"
+                    : "—";
+
+            if (!merchants.length) {
+
+                $("storeCount").textContent =
+                    new Set(
+                        deals.map(deal => deal.merchant)
+                    ).size;
+            }
+
+            const timestamp =
+                data.updated_at ||
+                data.fetched_at ||
+                data.last_updated ||
+                null;
+
+            let updateText = "";
+
+            if (timestamp) {
+
+                const updated = new Date(timestamp);
+
+                if (!Number.isNaN(updated.getTime())) {
+
+                    updateText =
+                        " · Feed updated " +
+                        updated.toLocaleString();
+                }
+            }
+
+            setStatus(
+                "dealStatus",
+                deals.length +
+                " matching advertised deals" +
+                updateText
+            );
+
+            if (!deals.length) {
+
+                $("emptyTitle").textContent =
+                    "No matching deals";
+
+                $("emptyMessage").textContent =
+                    "Try another store, remove your filters, " +
+                    "or check back when new weekly ads arrive.";
+            }
+
+        } catch (error) {
+
+            if (
+                error.name === "AbortError" ||
+                currentRequest !== requestId
+            ) {
+                return;
+            }
+
+            deals = [];
+
+            $("dealGrid").replaceChildren();
+
+            $("dealCount").textContent = "—";
+            $("bestDiscount").textContent = "—";
+
+            $("emptyState").hidden = false;
+            $("loadMore").hidden = true;
+
+            $("emptyTitle").textContent =
+                "Deals temporarily unavailable";
+
+            $("emptyMessage").textContent =
+                "The local deal feed could not be loaded. " +
+                "Please try refreshing.";
+
+            setStatus(
+                "dealStatus",
+                error.message,
+                true
+            );
+
+        } finally {
+
+            if (currentRequest === requestId) {
+                $("refresh").disabled = false;
+            }
+        }
+    }
+
+    function conditionLabel(condition) {
+
+        const labels = {
+            loyalty_card: "Rewards required",
+            coupon: "Coupon required",
+            multi_buy: "Multi-buy offer",
+            limit: "Purchase limit"
+        };
+
+        return labels[condition] ||
+            String(condition).replace(/_/g, " ");
+    }
+
+    function createDealCard(deal) {
+
+        const card = element(
+            "article",
+            "deal-card"
+        );
+
+        const visual = element(
+            "div",
+            "deal-visual"
+        );
+
+        const initials = deal.merchant
+            .split(/\s+/)
+            .slice(0, 2)
+            .map(word => word.charAt(0))
+            .join("")
+            .toUpperCase();
+
+        const fallback = element(
+            "div",
+            "merchant-monogram",
+            initials
+        );
+
+        visual.appendChild(fallback);
+
+        if (deal.image) {
+
+            const image = document.createElement("img");
+
+            image.src = deal.image;
+            image.alt = deal.name;
+            image.loading = "lazy";
+            image.referrerPolicy = "no-referrer";
+
+            image.addEventListener("load", () => {
+                fallback.hidden = true;
+            });
+
+            image.addEventListener("error", () => {
+                image.remove();
+                fallback.hidden = false;
+            });
+
+            visual.appendChild(image);
+        }
+
+        if (
+            deal.discount !== null &&
+            deal.discount > 0
+        ) {
+
+            visual.appendChild(
+                element(
+                    "span",
+                    "discount-badge",
+                    deal.discount + "% OFF"
+                )
+            );
+        }
+
+        card.appendChild(visual);
+
+        const body = element(
+            "div",
+            "deal-body"
+        );
+
+        body.appendChild(
+            element(
+                "div",
+                "merchant-name",
+                deal.merchant
+            )
+        );
+
+        body.appendChild(
+            element(
+                "h3",
+                "deal-name",
+                deal.name
+            )
+        );
+
+        const priceRow = element(
+            "div",
+            "price-row"
+        );
+
+        priceRow.appendChild(
+            element(
+                "span",
+                "sale-price",
+                money(deal.price)
+            )
+        );
+
+        if (
+            deal.original !== null &&
+            deal.original > deal.price
+        ) {
+
+            priceRow.appendChild(
+                element(
+                    "span",
+                    "old-price",
+                    money(deal.original)
+                )
+            );
+        }
+
+        body.appendChild(priceRow);
+
+        if (deal.saving !== null) {
+
+            body.appendChild(
+                element(
+                    "div",
+                    "savings",
+                    "Save " + money(deal.saving)
+                )
+            );
+        }
+
+        if (deal.details) {
+
+            body.appendChild(
+                element(
+                    "div",
+                    "deal-details",
+                    deal.details
+                )
+            );
+        }
+
+        if (deal.conditions.length) {
+
+            const conditions = element(
+                "div",
+                "conditions"
+            );
+
+            deal.conditions.forEach(condition => {
+
+                conditions.appendChild(
+                    element(
+                        "span",
+                        "condition",
+                        conditionLabel(condition)
+                    )
+                );
+            });
+
+            body.appendChild(conditions);
+        }
+
+        const footer = element(
+            "div",
+            "deal-footer"
+        );
+
+        footer.appendChild(
+            element(
+                "div",
+                "expiration",
+                deal.validTo
+                    ? "Advertised through " + deal.validTo
+                    : "Offer expiration not provided"
+            )
+        );
+
+        const share = element(
+            "button",
+            "share-button",
+            "Share Deal"
+        );
+
+        share.type = "button";
+
+        share.addEventListener("click", () => {
+            shareDeal(deal, share);
+        });
+
+        footer.appendChild(share);
+        body.appendChild(footer);
+        card.appendChild(body);
+
+        return card;
+    }
+
+    function renderDeals() {
+
+        const grid = $("dealGrid");
+
+        grid.replaceChildren();
+
+        const fragment =
+            document.createDocumentFragment();
+
+        deals.slice(0, visibleCount)
+            .forEach(deal => {
+
+                fragment.appendChild(
+                    createDealCard(deal)
+                );
+            });
+
+        grid.appendChild(fragment);
+
+        $("emptyState").hidden =
+            deals.length > 0;
+
+        $("loadMore").hidden =
+            visibleCount >= deals.length;
+    }
+
+    async function shareDeal(deal, button) {
+
+        const url = new URL(
+            "/",
+            window.location.origin
+        );
+
+        url.searchParams.set(
+            "search",
+            deal.name
+        );
+
+        url.searchParams.set(
+            "merchant",
+            deal.merchant
+        );
+
+        const text =
+            deal.name + " — " +
+            money(deal.price) + " at " +
+            deal.merchant +
+            "\nFound on Camp Creek Market.";
+
+        try {
+
+            if (navigator.share) {
+
+                await navigator.share({
+                    title: "Camp Creek Market",
+                    text: text,
+                    url: url.href
+                });
+
+            } else if (navigator.clipboard) {
+
+                await navigator.clipboard.writeText(
+                    text + "\n" + url.href
+                );
+
+                button.textContent = "Link Copied!";
+
+                setTimeout(() => {
+                    button.textContent = "Share Deal";
+                }, 2000);
+
+            } else {
+
+                window.prompt(
+                    "Copy this deal:",
+                    text + "\n" + url.href
+                );
+            }
+
+        } catch (error) {
+
+            if (error.name !== "AbortError") {
+
+                window.prompt(
+                    "Copy this deal:",
+                    text + "\n" + url.href
+                );
+            }
+        }
+    }
+
+    function updateChips(activeFilter) {
+
+        document.querySelectorAll(".chip")
+            .forEach(chip => {
+
+                const active =
+                    chip.dataset.filter === activeFilter;
+
+                chip.classList.toggle(
+                    "active",
+                    active
+                );
+
+                chip.setAttribute(
+                    "aria-pressed",
+                    String(active)
+                );
+            });
+    }
+
+    function syncChips() {
+
+        const discount = $("minDiscount").value;
+        const price = $("maxPrice").value;
+
+        if (discount === "50" && !price) {
+            updateChips("50");
+        } else if (discount === "75" && !price) {
+            updateChips("75");
+        } else if (discount === "0" && price === "10") {
+            updateChips("under10");
+        } else if (discount === "0" && price === "25") {
+            updateChips("under25");
+        } else if (discount === "0" && !price) {
+            updateChips("all");
+        } else {
+            updateChips("");
+        }
+    }
+
+    $("searchForm").addEventListener(
+        "submit",
+        event => {
+
+            event.preventDefault();
+
+            loadDeals();
+
+            $("deals").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    );
+
+    [
+        "merchant",
+        "minDiscount",
+        "maxPrice"
+    ].forEach(id => {
+
+        $(id).addEventListener("change", () => {
+
+            syncChips();
+            loadDeals();
+        });
+    });
+
+    document.querySelectorAll(".chip")
+        .forEach(chip => {
+
+            chip.addEventListener("click", () => {
+
+                const filter = chip.dataset.filter;
+
+                $("minDiscount").value = "0";
+                $("maxPrice").value = "";
+
+                if (filter === "50" || filter === "75") {
+
+                    $("minDiscount").value = filter;
+
+                } else if (filter === "under10") {
+
+                    $("maxPrice").value = "10";
+
+                } else if (filter === "under25") {
+
+                    $("maxPrice").value = "25";
+                }
+
+                updateChips(filter);
+                loadDeals();
+            });
+        });
+
+    $("clearFilters").addEventListener(
+        "click",
+        () => {
+
+            $("search").value = "";
+            $("merchant").value = "";
+            $("minDiscount").value = "0";
+            $("maxPrice").value = "";
+
+            updateChips("all");
+            loadDeals();
+        }
+    );
+
+    $("refresh").addEventListener(
+        "click",
+        () => loadDeals(false)
+    );
+
+    $("loadMore").addEventListener(
+        "click",
+        () => {
+
+            visibleCount += PAGE_SIZE;
+            renderDeals();
+        }
+    );
+
+    /* PRIVATE ADMIN API */
+
+    function adminHeaders(extra = {}) {
+
+        const token =
+            $("adminToken").value.trim();
+
+        if (!token) {
+
+            throw new Error(
+                "Enter your admin access token."
+            );
+        }
+
+        return {
+            "Authorization": "Bearer " + token,
+            ...extra
+        };
+    }
+
+    function setAdminBusy(busy) {
+
+        adminBusy = busy;
+
+        [
+            "scan",
+            "demo",
+            "approve",
+            "decline"
+        ].forEach(id => {
+
+            $(id).disabled = busy;
+        });
+    }
+
+    function renderReceiptResults(data) {
+
+        const totals = data.totals || {};
+
+        $("saving").textContent =
+            money(totals.saving);
+
+        $("totals").textContent =
+            "Draft deal total: " +
+            money(totals.total);
+
+        const rows = $("receiptRows");
+
+        rows.replaceChildren();
+
+        (data.rows || []).forEach(row => {
+
+            const item = element(
+                "div",
+                "receipt-row"
+            );
+
+            item.appendChild(
+                element(
+                    "strong",
+                    "",
+                    row.name
+                )
+            );
+
+            item.appendChild(
+                element(
+                    "small",
+                    "",
+                    "Paid " + money(row.paid) +
+                    " · Deal " + money(row.deal) +
+                    " · " + row.store
+                )
+            );
+
+            if (row.saving !== null &&
+                row.saving !== undefined) {
+
+                item.appendChild(
+                    element(
+                        "div",
+                        "savings",
+                        "Savings difference: " +
+                        money(row.saving)
+                    )
+                );
+            }
+
+            rows.appendChild(item);
+        });
+
+        if (!(data.rows || []).length) {
+
+            rows.appendChild(
+                element(
+                    "p",
+                    "status",
+                    "No matching receipt deals yet."
+                )
+            );
+        }
+
+        $("notes").replaceChildren();
+
+        (data.notes || []).forEach(note => {
+
+            $("notes").appendChild(
+                element("li", "", note)
+            );
+        });
+
+        $("resultsCard").hidden = false;
+
+        approvalId = data.approval_id || null;
+
+        $("cartCard").hidden = !approvalId;
+
+        $("cartStatus").textContent = "";
+
+        if (approvalId) {
+
+            $("cartText").textContent =
+                "Draft shopping plan: " +
+                money(totals.total) +
+                ". Approval records your decision.";
+        }
+
+        setStatus(
+            "adminStatus",
+            (data.purchases || 0) +
+            " items read · " +
+            (data.review || 0) +
+            " require review."
+        );
+    }
+
+    $("scan").addEventListener(
+        "click",
+        async () => {
+
+            if (adminBusy) return;
+
+            try {
+
+                const headers = adminHeaders();
+
+                const files = Array.from(
+                    $("files").files
+                );
+
+                const camera = $("camera").files;
+
+                if (camera.length) {
+                    files.push(camera[0]);
+                }
+
+                if (!files.length) {
+
+                    throw new Error(
+                        "Choose at least one receipt."
+                    );
+                }
+
+                const totalBytes = files.reduce(
+                    (sum, file) => sum + file.size,
+                    0
+                );
+
+                if (totalBytes > 19 * 1024 * 1024) {
+
+                    throw new Error(
+                        "Please upload less than 19 MB at a time."
+                    );
+                }
+
+                const form = new FormData();
+
+                files.forEach(file => {
+
+                    form.append(
+                        "receipts",
+                        file,
+                        file.name
+                    );
+                });
+
+                const params = new URLSearchParams({
+                    date: $("date").value,
+                    store: $("receiptStore").value
+                });
+
+                setAdminBusy(true);
+
+                setStatus(
+                    "adminStatus",
+                    "Scanning receipts..."
+                );
+
+                const data = await api(
+                    "/api/ingest?" + params.toString(),
+                    {
+                        method: "POST",
+                        headers: headers,
+                        body: form
+                    }
+                );
+
+                renderReceiptResults(data);
+
+            } catch (error) {
+
+                setStatus(
+                    "adminStatus",
+                    error.message,
+                    true
+                );
+
+            } finally {
+
+                setAdminBusy(false);
+            }
+        }
+    );
+
+    $("demo").addEventListener(
+        "click",
+        async () => {
+
+            if (adminBusy) return;
+
+            try {
+
+                const headers = adminHeaders();
+
+                setAdminBusy(true);
+
+                setStatus(
+                    "adminStatus",
+                    "Loading demo receipts..."
+                );
+
+                const data = await api(
+                    "/api/demo",
+                    {
+                        method: "POST",
+                        headers: headers
+                    }
+                );
+
+                renderReceiptResults(data);
+
+            } catch (error) {
+
+                setStatus(
+                    "adminStatus",
+                    error.message,
+                    true
+                );
+
+            } finally {
+
+                setAdminBusy(false);
+            }
+        }
+    );
+
+    async function decide(approved) {
+
+        if (!approvalId || adminBusy) {
+            return;
+        }
+
+        try {
+
+            const headers = adminHeaders({
+                "Content-Type": "application/json"
+            });
+
+            setAdminBusy(true);
+
+            const data = await api(
+                "/api/approve",
+                {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify({
+                        approval_id: approvalId,
+                        approved: approved
+                    })
+                }
+            );
+
+            setStatus(
+                "cartStatus",
+                "Cart " + data.status + "."
+            );
+
+            approvalId = null;
+
+        } catch (error) {
+
+            setStatus(
+                "cartStatus",
+                error.message,
+                true
+            );
+
+        } finally {
+
+            setAdminBusy(false);
+
+            if (!approvalId) {
+
+                $("approve").disabled = true;
+                $("decline").disabled = true;
+            }
+        }
+    }
+
+    $("approve").addEventListener(
+        "click",
+        () => decide(true)
+    );
+
+    $("decline").addEventListener(
+        "click",
+        () => decide(false)
+    );
+
+    /* INITIAL PAGE LOAD */
+
+    async function initialize() {
+
+        await loadMerchants();
+
+        const params = new URLSearchParams(
+            window.location.search
+        );
+
+        const search = params.get("search");
+
+        const merchant = params.get("merchant");
+
+        if (search) {
+            $("search").value = search;
+        }
+
+        if (
+            merchant &&
+            merchants.includes(merchant)
+        ) {
+            $("merchant").value = merchant;
+        }
+
+        syncChips();
+
+        await loadDeals();
+    }
+
+    initialize();
+
+    /* REFRESH PUBLIC DEAL FEED */
+
+    setInterval(() => {
+
+        if (
+            document.visibilityState === "visible" &&
+            !adminBusy &&
+            !$("refresh").disabled
+        ) {
+            loadDeals(false);
+        }
+
+    }, REFRESH_INTERVAL);
+
 })();
 </script>
+
 </body>
 </html>
