@@ -1,0 +1,6 @@
+{
+  "provider": "python",
+  "deploy": {
+    "startCommand": "python -m smartpantry serve --port $PORT --live"
+  }
+}
